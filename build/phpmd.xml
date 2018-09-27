@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<pmd version="@project.version@" timestamp="2018-09-27T20:10:10+02:00">
+    <file name="C:\Users\peter\Projects\SNPHandler\src\bTd\Monolog\Handler\SNP\Handler.php">
+        <violation beginline="43" endline="43" rule="BooleanArgumentFlag" ruleset="Clean Code Rules"
+                   externalInfoUrl="https://phpmd.org/rules/cleancode.html#booleanargumentflag" priority="1">
+            The method __construct has a boolean flag argument $bubble, which is a certain sign of a Single
+            Responsibility Principle violation.
+        </violation>
+        <violation beginline="58" endline="108" rule="CyclomaticComplexity" ruleset="Code Size Rules"
+                   package="bTd\Monolog\Handler\SNP"
+                   externalInfoUrl="https://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Handler"
+                   method="write" priority="3">
+            The method write() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+        </violation>
+    </file>
+</pmd>

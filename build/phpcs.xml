@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<phpcs version="3.3.1">
+    xml version="1.0" encoding="UTF-8"?>
+    <file name="C:\Users\peter\Projects\SNPHandler\src\bTd\Monolog\Handler\SNP\Handler.php" errors="9" warnings="0"
+          fixable="0">
+        <error line="26" column="5" source="Generic.Commenting.DocComment.MissingShort" severity="5" fixable="0">Missing
+            short description in doc comment
+        </error>
+        <error line="35" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="36" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="37" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="38" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="39" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="40" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+        <error line="53" column="5" source="Generic.Commenting.DocComment.MissingShort" severity="5" fixable="0">Missing
+            short description in doc comment
+        </error>
+        <error line="54" column="8" source="PEAR.Commenting.FunctionComment.MissingParamComment" severity="5"
+               fixable="0">Missing parameter comment
+        </error>
+    </file>
+</phpcs>
+

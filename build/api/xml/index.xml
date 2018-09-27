@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<index xmlns="http://xml.phpdox.net/src" basedir="C:/Users/peter/Projects/SNPHandler/src">
+    <namespace name="bTd\Monolog\Handler\SNP">
+        <class name="Handler" src="bTd/Monolog/Handler/SNP/Handler.php" description="Class Handler"
+               xml="classes/bTd_Monolog_Handler_SNP_Handler.xml"/>
+    </namespace>
+</index>

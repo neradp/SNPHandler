@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<class xmlns="http://xml.phpdox.net/src" full="bTd\Monolog\Handler\SNP\Handler" namespace="bTd\Monolog\Handler\SNP"
+       name="Handler" abstract="false" final="false" start="24" end="112">
+    <file path="C:/Users/peter/Projects/SNPHandler/src/bTd/Monolog/Handler/SNP" file="Handler.php"
+          realpath="C:/Users/peter/Projects/SNPHandler/src/bTd/Monolog/Handler/SNP/Handler.php" size="3036"
+          time="2018-09-27T20:21:48+02:00" unixtime="1538072508" sha1="602f2de7dbcb2aaa0a89b36a739ea75a9f94f699"
+          relative="bTd/Monolog/Handler/SNP/Handler.php"/>
+    <docblock>
+        <description compact="Class Handler"/>
+        <package value="bTd\Monolog\Handler\SNP"/>
+    </docblock>
+    <extends full="Monolog\Handler\AbstractProcessingHandler" namespace="Monolog\Handler"
+             name="AbstractProcessingHandler" unresolved="true"/>
+    <member name="client" visibility="private" static="false" line="29">
+        <docblock>
+            <description/>
+            <var type="object">
+                <type full="bTd\SNP\Client\Client" namespace="bTd\SNP\Client" name="Client"/>
+            </var>
+        </docblock>
+    </member>
+    <constructor name="__construct" start="44" end="50" abstract="false" final="false" static="false"
+                 visibility="public">
+        <docblock>
+            <description compact="Handler constructor"/>
+            <param type="object" variable="$client">
+                <type full="bTd\SNP\Client\Client" namespace="bTd\SNP\Client" name="Client"/>
+            </param>
+            <param type="int" variable="$level"/>
+            <param type="object" variable="$bubble">
+                <type full="bTd\Monolog\Handler\SNP\bool" namespace="bTd\Monolog\Handler\SNP" name="bool"/>
+            </param>
+            <param type="string" variable="$appTitle"/>
+            <param type="string" variable="$appID"/>
+            <param type="string" variable="$icon"/>
+            <throws type="object">
+                <type full="\bTd\SNP\Protocol\Message\Response\ErrorResponseException"
+                      namespace="\bTd\SNP\Protocol\Message\Response" name="ErrorResponseException"/>
+            </throws>
+        </docblock>
+        <parameter name="client" byreference="false" type="object">
+            <type full="bTd\SNP\Client\Client" namespace="bTd\SNP\Client" name="Client"/>
+        </parameter>
+        <parameter name="level" byreference="false" type="{unknown}" default="" constant="Logger::DEBUG"/>
+        <parameter name="bubble" byreference="false" type="boolean" default="true"/>
+        <parameter name="appTitle" byreference="false" type="string" default="&quot;Monolog Logger&quot;"/>
+        <parameter name="appID" byreference="false" type="string" default="&quot;monolog&quot;"/>
+        <parameter name="icon" byreference="false" type="string" default="&quot;stock:platform-beos&quot;"/>
+    </constructor>
+    <method name="write" start="59" end="109" abstract="false" final="false" static="false" visibility="protected">
+        <docblock>
+            <description/>
+            <param type="array" variable="$record"/>
+            <return type="object">
+                <type full="bTd\Monolog\Handler\SNP\void" namespace="bTd\Monolog\Handler\SNP" name="void"/>
+            </return>
+            <throws type="object">
+                <type full="\bTd\SNP\Protocol\Message\Response\ErrorResponseException"
+                      namespace="\bTd\SNP\Protocol\Message\Response" name="ErrorResponseException"/>
+            </throws>
+        </docblock>
+        <return type="void" nullable="false"/>
+        <parameter name="record" byreference="false" type="array"/>
+        <inline>
+            <comment value="end switch" line="104"/>
+        </inline>
+    </method>
+</class>

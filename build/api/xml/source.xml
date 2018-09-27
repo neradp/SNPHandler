@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<source xmlns="http://xml.phpdox.net/src">
+    <dir name="C:/Users/peter/Projects/SNPHandler/src">
+        <dir name="bTd">
+            <dir name="Monolog">
+                <dir name="Handler">
+                    <dir name="SNP">
+                        <file name="Handler.php" size="3036" time="2018-09-27T20:21:48+02:00" unixtime="1538072508"
+                              sha1="602f2de7dbcb2aaa0a89b36a739ea75a9f94f699"
+                              xml="tokens/bTd/Monolog/Handler/SNP/Handler.php.xml"/>
+                    </dir>
+                </dir>
+            </dir>
+        </dir>
+    </dir>
+</source>

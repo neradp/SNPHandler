@@ -1,0 +1,46 @@
+{
+  "name": "btd/monolog-snp-handler",
+  "description": "Monolog handler that send notifications to Snarl on Windows (support protocol SNP 3.1 only)",
+  "keywords": [
+    "SNP",
+    "SNP3.1",
+    "SNPClient",
+    "Snarl",
+    "Monolog"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Peter Nerád",
+      "email": "nerad.peter@gmail.com",
+      "homepage": "http://www.nerad.sk"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "ext-sockets": "*",
+    "monolog/monolog": "^1.23",
+    "btd/snp-client": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "bTd\\": "src/bTd"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit",
+    "test-nosrv": "phpunit --exclude-group=RequireServer",
+    "doc": "phpdox",
+    "md": "phpmd src xml cleancode,codesize,controversial,design,naming,unusedcode --reportfile build/phpmd.xml --ignore-violations-on-exit && phpmd src text cleancode,codesize,controversial,design,naming,unusedcode --ignore-violations-on-exit",
+    "loc": "phploc --count-tests --log-xml=build/phploc.xml src tests"
+  },
+  "require-dev": {
+  }
+}

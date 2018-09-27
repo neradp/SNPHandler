@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  ~ Copyright (c) 2018. Peter Nerád
+  -->
+
+<phpdox xmlns="http://xml.phpdox.net/config">
+    <project name="SNPClient" source="${basedir}/src" workdir="${basedir}/build/api/xml">
+        <collector backend="parser">
+            <inheritance resolve="true">
+            </inheritance>
+        </collector>
+        <generator output="${basedir}/docs/api">
+            <enrich base="${basedir}/build">
+                <source type="phpcs">
+                    <file name="phpcs.xml"/>
+                </source>
+                <source type="pmd">
+                    <file name="phpmd.xml"/>
+                </source>
+                <source type="phploc">
+                    <file name="phploc.xml"/>
+                </source>
+                <source type="git">
+
+                </source>
+
+                <source type="phpunit">
+                    <coverage path="coverage"/>
+                    <filter directory="${phpDox.project.source}"/>
+                </source>
+            </enrich>
+            <build engine="html" output="html"/>
+        </generator>
+    </project>
+</phpdox>
