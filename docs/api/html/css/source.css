@@ -1,16 +1,12 @@
-/*
- * Copyright (c) 2018. Peter Nerád
- */
-
 table.source {
-    border: 0;
-    padding: 0;
-    margin: 0;
+    border:0;
+    padding:0;
+    margin:0;
     border-collapse: collapse;
 }
 
 table.source td {
-    border: 1px solid #ccc;
+    border:1px solid #ccc;
     vertical-align: top;
     font-size: 1em;
     line-height: 1.4em;
@@ -18,7 +14,7 @@ table.source td {
 }
 
 table.source td.no a {
-    display: block;
+    display:block;
     color: #ccc;
     text-align: right;
     padding: 0 8px;
@@ -26,17 +22,17 @@ table.source td.no a {
 }
 
 table.source pre {
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
 }
 
 table.source pre span {
-    display: inline;
+    display:inline;
 }
 
 table.source td.line div {
-    padding: 80px 0 0 0;
-    margin: -80px 0 0 0;
+    padding:80px 0 0 0;
+    margin:-80px 0 0 0;
     cursor: text;
 }
 
@@ -152,17 +148,17 @@ table.source td.line div:target pre {
 }
 
 a.covered:hover + div {
-    left: 90px;
+    left:90px;
 }
 
 .coverage_details {
     position: absolute;
-    left: -10000px;
-    margin: -1.4em 0 0 0;
+    left:-10000px;
+    margin:-1.4em 0 0 0;
     background-color: #eee;
     box-shadow: 5px 5px 10px #888;
     z-index: 1;
-    padding: 1em;
+    padding:1em;
 }
 
 .coverage_details span {
@@ -170,18 +166,18 @@ a.covered:hover + div {
 }
 
 .coverage_details ul {
-    margin: 0;
-    padding: 1em;
+    margin:0;
+    padding:1em;
 }
 
 .coverage_details:before {
     position: absolute;
-    content: "";
+    content:"";
     width: 12px;
     height: 12px;
     top: 3px;
     left: -6px;
-    border: 0;
+    border:0;
     background-color: #eee;
     transform: rotate(45deg);
     z-index: -1;
