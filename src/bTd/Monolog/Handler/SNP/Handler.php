@@ -61,11 +61,11 @@ class Handler extends AbstractProcessingHandler
         $title   = "[ ".$record['datetime']->format("H:i:s")." ] ".$record["channel"]." ".$record['level_name'];
         $message = $record['message'];
         if (count($record['context']) > 0) {
-            $message .= " [".implode(", ", $record['context'])."]";
+            $message .= "\r\nContext: [".implode(", ", $record['context'])."]";
         }
 
         if (count($record['extra']) > 0) {
-            $message .= " [".implode(", ", $record['extra'])."]";
+            $message .= "\r\nExtra: [".implode(", ", $record['extra'])."]";
         }
 
         switch ($record['level']) {
